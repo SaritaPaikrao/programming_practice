@@ -1,0 +1,13 @@
+OutOfMemoryError
+
+Preventive Measures:
+1. Efficient Memory management: Ensure proper release of resources using techniques like try-with-resource to prevent memory leaks many causes by static variable which are not garbage collected by JVM.
+2. Monitoring and profiling: Use tools like VisualVM, JConsole or Java Mission control to monitor memory usage and identify potential leaks.
+3. JVM Heap Configuration: Adjust the JVM heap size using the -Xms and -Xmx parameters to set the initial and maximum heap size respectively.
+
+
+Resolution Stratergies:
+1. Analyzing Heap Dumps: Use tools like Eclipse MAT(Memory Analyzer Tool) to analyze heap dumps and identify memory-hungry objects or potential leaks.
+2. Garbage Collection Tuning: Optimize garbage collection setting to improve memory management.
+3. Code Optimization: Refactor code to reduce memory consumption, such as avoiding unnecessary object creation an during efficient data structures.
+

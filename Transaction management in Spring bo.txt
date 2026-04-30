@@ -1,0 +1,27 @@
+Transaction management in Spring boot -
+
+Using @Transactional annotation and 
+@EnableTransactionManagment it ensures the declarative transaction in spring. 
+
+Spring boot contains different levels of Propagation and Isolation it determines how the transaction relates to each other. This enables spring to support transaction management within the application and add the code base for methods or class which declare with the @Transactional annotation.
+
+1 Required - the default propagation, if transaction exists it will join otherwise create new transaction
+2 Requires_new - it suspends current transaction and creates new one.
+3 Supports- It joins the existing transaction if present, else go without non-transactionally.
+4 Mandatory - It specifies that method must execute in existing transaction else throw TransactionRequiredException
+5 Not_Supported - If a current transaction exists, then spring suspend it and business logic executed without transaction.
+6 Never - Spring throws an exception when there is active transaction is running.
+
+
+Isolation levels:
+Isolation is one of the common ACID properties: Atomicity, Consistency, Isolation, Durability.
+Isolation describes how changes applied by concurrent transactions are visible to each others.
+
+the default isolation level is DEFAULT.
+1. READ_UNCOMMITED-
+is the lowest isolation level. It allows for the most concurrent access.
+
+2. READ_COMMITED - It prevents dirty read. 
+
+3 REPEATABLE-READ - 
+prevents dirty and non-repeatable reads. So we are not affected by uncommitted changes in concurrent transactions.

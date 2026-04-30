@@ -1,0 +1,2 @@
+SDO- Signed data object
+ singed data along with ID token(jwt token) and other custom properties.

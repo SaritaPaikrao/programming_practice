@@ -1,0 +1,5 @@
+Spring boot Exception handling:
+
+Two imp annotations
+1- @ControllerAdvice - Class level annotation
+2- @ExceptionHandler

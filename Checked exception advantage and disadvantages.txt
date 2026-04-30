@@ -1,0 +1,10 @@
+Advantage and Disadvantages of Chceked exception
+
+Aspect					Advantage								Disadvantage
+Error Handling	        Forces explicit handling → safer code	Can lead to boilerplate try-catch blocks
+
+API Contracts			Clear method signatures with throws		Long chains of declarations clutter APIs
+
+Development				Fail-fast at compile time				Slows down coding due to verbosity
+
+Language Design			Promotes robustness						Considered unnecessary by some languages

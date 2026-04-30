@@ -1,0 +1,26 @@
+Difference between @service and @repository annotation
+=> @service annotation is used over classes which are in service layer and where we can write business logic.
+@repository annotation is used over the classes or the interfaces where we want to connect to the database, like in this layer perform database related actions.
+
+Can we replace those annotation with each other or it affects the application performance
+=>
+We can replace @service and @repository with each other as they both implements the Component annotation which is generic one.
+but there are different functionality with @repository like repository converts the checked exception into the unchecked exceptions.
+if we do not use the @reposiroty then we need to manually check the all the exceptions like throw the unchecked exceptions.
+
+What issues might arise overusing @Autowired
+=>
+We should use autowiring if we need it, but we are overusing autowire there might be issues like tight coupling and difficulty in unit testing this can mitigated by using constructor injection for mandatory dependencies.
+and there again issue like if we autowired 2 same beans with then it will exception for having same beans then we need to resolve this by using @qulifier annotation.
+Previously we uses by name, by type and constructor wiring
+
+Describe the scenario where IOC might introduce complexity in the application
+=>
+It is very rare actually but sometimes it create complexities when there will be complicated dependency tree which can make debugging difficult.
+
+Difference between Application context and bean factory
+=>
+both are ioc container in spring. Bean factory uses lazy loading to initialize the beans where as application context eagerly initializes the beans.
+then we different functionalities like internalization in application context which is not in bean factory. and then annotation based autowiring is supported in application context but it is not supported in bean factory.
+bean factory is useful in small applications where we dont need internalization and annotation based wiring.
+  

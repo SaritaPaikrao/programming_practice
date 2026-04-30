@@ -1,0 +1,4 @@
+Profiling in Spring :-
+ 
+Spring profiles allows you to group several spring application component and configuration modules together so that they may be enabled or disabled in different environments.
+When any components annotated with at configuration or at component may also be annotated with @profile annotation to limit when it is loaded into the application context to inform the application which profiles are active use the spring profiles active 

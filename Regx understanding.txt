@@ -1,0 +1,11 @@
+.: Matches any single character (except newline).
+*: Matches zero or more occurrences of the preceding character/group.
++: Matches one or more occurrences of the preceding character/group.
+?: Matches zero or one occurrence of the preceding character/group.
+[]: Defines a character class (e.g., [aeiou] matches any vowel).
+|: Acts as an "OR" operator (e.g., cat|dog matches "cat" or "dog").
+(): Groups characters or sub-expressions.
+\d: Matches a digit (0-9).
+\s: Matches a whitespace character.
+\w: Matches a word character (alphanumeric + underscore).
+
